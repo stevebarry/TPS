@@ -11,7 +11,7 @@ You will need Java running on your machine, any version from 1.5 onwards. If you
 ```cmd
 java -version 
 ```
-The application uses version 15.10 Teradata Drivers, which are compatible with versions 15.10, 15.0, 14.10, 14.0, 13.10 of the Teradata database. If you require older drivers please raise an issue.
+The application uses version 15.10 Teradata Drivers, which are compatible with versions 15.10, 15.0, 14.10, 14.0 and 13.10 of the Teradata database. If you require compatibility with older versions of the Teradata database  please raise an issue.
 
 
 ##How to use it
