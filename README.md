@@ -11,6 +11,7 @@ You will need Java running on your machine, any version from 1.5 onwards. If you
 ```cmd
 java -version 
 ```
+The application uses version 15.10 Teradata Drivers, which are compatible with versions 15.10, 15.0, 14.10, 14.0, 13.10 of the Teradata database. If you require older drivers please raise an issue.
 
 
 ##How to use it
@@ -42,5 +43,7 @@ example:
 ```cmd
 java -jar TPS.jar my_db procedure_source 172.16.252.131 dbc dbc
 ```
+## Other Considerations
+The SHOW PROCEDURE command may result in an error for some procedures. If this happens the procedure is still recorded in the target table, but with a status of 'Failure', and the error message is stored in the sourceText column.
 
 
