@@ -29,6 +29,7 @@ CREATE SET TABLE <database>.<table_name>
 ```
 Step 2. Download the latest release of the application
     https://github.com/stevebarry/TPS/releases/download/v0.5/TPS.jar
+
 Step 3. Browse to where you have put the jar file in step 2, then call it from the command line as follows:
 ```cmd
 java -jar TPS.jar <target database> <target table> <db server> <username> <password>
