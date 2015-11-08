@@ -33,11 +33,11 @@ CREATE SET TABLE <database>.<table_name>
 java -jar TPS.jar <target database> <target table> <db server> <username> <password>
 ```
 where
-*<target database> is the database where you have created the table in step 3
-*<target table> is the table you have created in step 3
-*<db server> is the name of the database server
-*<username> is the username used to log on to this database (must have SELECT/INSERT/DELETE access to the new table, plus SELECT access to dbc.tables and SHOW PROCEDURE privileges)
-*<password> password of user
+* <target database> is the database where you have created the table in step 3
+* <target table> is the table you have created in step 3
+* <db server> is the name of the database server
+* <username> is the username used to log on to this database (must have SELECT/INSERT/DELETE access to the new table, plus SELECT access to dbc.tables and SHOW PROCEDURE privileges)
+* <password> password of user
 example:
 ```cmd
 java -jar TPS.jar my_db procedure_source 172.16.252.131 dbc dbc
