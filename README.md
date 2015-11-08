@@ -7,11 +7,10 @@ Simple Java Utility for querying a Teradata server and writing the text of all s
 It queries the Teradata metadata to get a list of all stored procedures, then for each stored procedure it runs the SHOW STORED PROCEDURE command to get the full CREATE STORED PROCEDURE text, the inserts this text into a table
 
 ## What you need to run it
-You will need Java running on your machine, any version from 1.5 onwards. If you are not sure what version of Java you have, type 
+You will need Java running on your machine, any version from 1.5 onwards. If you are not sure what version of Java you have, then open the command line and type 
 ```cmd
 java -version 
 ```
-at the command line.
 
 
 ##How to use it
