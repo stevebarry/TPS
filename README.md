@@ -4,7 +4,7 @@
 Simple Java Utility for querying a Teradata server and writing the text of all stored procedures to a table.
 
 ##  How it works
-It queries the Teradata metadata to get a list of all stored procedures, then for each stored procedure it runs the SHOW STORED PROCEDURE command to get the full CREATE STORED PROCEDURE text, the inserts this text into a table
+It queries the Teradata metadata to get a list of all stored procedures, then for each stored procedure it runs the SHOW STORED PROCEDURE command to get the full CREATE STORED PROCEDURE text, then inserts this text into a table
 
 ## What you need to run it
 You will need Java running on your machine, any version from 1.5 onwards. If you are not sure what version of Java you have, then open the command line and type 
@@ -33,11 +33,11 @@ CREATE SET TABLE <database>.<table_name>
 java -jar TPS.jar <target database> <target table> <db server> <username> <password>
 ```
 where
-<target database> is the database where you have created the table in step 3
-<target table> is the table you have created in step 3
-<db server> is the name of the database server
-<username> is the username used to log on to this database (must have SELECT/INSERT/DELETE access to the new table, plus SELECT access to dbc.tables and SHOW PROCEDURE privileges)
-<password> password of user
+*<target database> is the database where you have created the table in step 3
+*<target table> is the table you have created in step 3
+*<db server> is the name of the database server
+*<username> is the username used to log on to this database (must have SELECT/INSERT/DELETE access to the new table, plus SELECT access to dbc.tables and SHOW PROCEDURE privileges)
+*<password> password of user
 example:
 ```cmd
 java -jar TPS.jar my_db procedure_source 172.16.252.131 dbc dbc
