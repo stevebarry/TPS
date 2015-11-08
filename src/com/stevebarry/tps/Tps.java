@@ -2,7 +2,9 @@ package com.stevebarry.tps;
 
 /**
  * 
-CREATE SET TABLE us5008.procedure_source
+ * Create script for target table
+ * 
+CREATE SET TABLE <database>.<table_name>
      (
       procedureName VARCHAR(30),
       databaseName VARCHAR(30),
@@ -44,6 +46,8 @@ public class Tps {
 		server = args[2];
 		username = args[3];
 		password = args[4];
+		
+		System.out.println("*** TPS application started ***");
 
 		// Loading the Teradata JDBC driver
 		try {
@@ -63,7 +67,7 @@ public class Tps {
 				// results to target table
 				insertProcedureSource();
 
-				System.out.println("Application Complete.");
+				System.out.println("*** TPS application completed ***");
 
 			} catch (SQLException e) {
 				System.out.println("Error encountered while connecting to database");
