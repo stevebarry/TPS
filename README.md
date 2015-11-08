@@ -15,7 +15,7 @@ The application uses version 15.10 Teradata Drivers, which are compatible with v
 
 
 ##How to use it
-1. Create a table on your database with the following structure:
+Step 1. Create a table on your database with the following structure:
 ```SQL
 CREATE SET TABLE <database>.<table_name>
      (
@@ -27,9 +27,9 @@ CREATE SET TABLE <database>.<table_name>
       )
 	PRIMARY INDEX ( procedureName, databaseName); 
 ```
-2. Download the latest release of the application
+Step 2. Download the latest release of the application
     https://github.com/stevebarry/TPS/releases/download/v0.5/TPS.jar
-3. Browse to where you have put the jar file in step 2, then call it from the command line as follows:
+Step 3. Browse to where you have put the jar file in step 2, then call it from the command line as follows:
 ```cmd
 java -jar TPS.jar <target database> <target table> <db server> <username> <password>
 ```
