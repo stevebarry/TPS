@@ -1,8 +1,7 @@
 # TPS
-##: Teradata Procedure Source
 
 ## What it is
-Simple Java Utility for querying a Teradata server and writing the text of all stored procedures to a table.
+TPS (Teradata Procedure Source) is a simple Java Utility for querying a Teradata server and writing the text of all stored procedures to a table.
 
 ##  How it works
 It queries the Teradata metadata to get a list of all stored procedures, then for each stored procedure it runs the SHOW STORED PROCEDURE command to get the full CREATE STORED PROCEDURE text, then inserts this text into a table.
